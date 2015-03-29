@@ -17,6 +17,7 @@ module.exports = function(grunt) {
 	 watch: 
 	  scripts: Sets the taks for any changes in typescript to be compiled into js
 	  styles: Sets the configuration for any changes un LESS to be compliled into CSS
+	  all: Sets the tasks for any changes so we can have Livereload
 	*/
 
 	grunt.initConfig({
@@ -68,6 +69,12 @@ module.exports = function(grunt) {
 				tasks: ['less'],
 				options: {
 					nospawn: true
+				}
+			},
+			all:{
+				files: ['**/*.html', '**/*.ts', '**/*.less'],
+				options: {
+					livereload: 9090
 				}
 			}
 		},
