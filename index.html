@@ -8,6 +8,9 @@
 		<meta name="viewport" content="width=device-width">
 
 		<link rel="stylesheet" href="css/main.css" />
+
+		<link rel="stylesheet" href="bower/materialize/dist/css/materialize.css" />
+		<link rel="stylesheet" href="bower/fontawesome/css/font-awesome.css" />
 	</head>
 	<body>
 		<!--[if lt IE 7]>
@@ -16,8 +19,56 @@
 
 		<!-- Add your site or application content here -->
 		<div id="root-content">
-			<h1 class="redwine">Hola Mundo :)</h1>
+			
+			<header>
+				<nav class="top-nav title-nav">
+					<div class="container">
+						<div class="nav-wrapper">
+							<a class="page-title">FEAW <span class="fa fa-pied-piper-alt"></span></a>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<main>
+				<div class="container">
+					<div class="row">
+						<div class="col s12">
+							<div class="section">
+								<div class="row">
+									<div class="col s12">
+										<p class="caption">
+											FEAW is a template for an automated front-end workflow
+										</p>
+										<ul class="collection with-header">
+											<li class="collection-header"><h4><i class="fa fa-wrench"></i> Tools</h4></li>
+											<li class="collection-item">Grunt</li>
+											<li class="collection-item">Bower</li>
+											<li class="collection-item">Typescript</li>
+											<li class="collection-item">LESS</li>
+											<li class="collection-header"><h4><i class="fa fa-gears"></i> Frameworks</h4></li>
+											<li class="collection-item">Materialize</li>
+											<li class="collection-item">FontAwesome</li>
+											<li class="collection-item">jQuery</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
 		</div>
+
+		<!-- build:js(.) scripts/oldieshim.js -->
+		<!--[if lt IE 9]>
+		<script src="bower_components/es5-shim/es5-shim.js"></script>
+		<script src="bower_components/json3/lib/json3.js"></script>
+		<![endif]-->
+		<!-- endbuild -->
+
+		<script src="bower/jquery/dist/jquery.min.js"></script>
+		<script src="bower/materialize/dist/js/materialize.js"></script>
+		<script src="http://localhost:9090/livereload.js"></script>
 
 		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
 		 <script>
@@ -29,15 +80,6 @@
 			ga('create', 'UA-XXXXX-X');
 			ga('send', 'pageview');
 		</script>
-
-		<!-- build:js(.) scripts/oldieshim.js -->
-		<!--[if lt IE 9]>
-		<script src="bower_components/es5-shim/es5-shim.js"></script>
-		<script src="bower_components/json3/lib/json3.js"></script>
-		<![endif]-->
-		<!-- endbuild -->
-
-		<script src="http://localhost:9090/livereload.js"></script>
 
 	</body>
 </html>

@@ -1,0 +1,8 @@
+{
+  "name": "feaw",
+  "version": "1.0.2",
+  "dependencies": {
+    "materialize": "~0.96.1",
+    "fontawesome": "~4.3.0"
+  }
+}
